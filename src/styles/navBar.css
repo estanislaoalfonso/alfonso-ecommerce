@@ -1,0 +1,37 @@
+.navBarContainer {
+  background-color: #333333;
+  color: #d6d6d6;
+  display: flex;
+  justify-content: center;
+}
+
+.navBarLogo {
+  margin: 0 0px;
+}
+
+.ulNavBar {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.ulNavBar li {
+  list-style-type: none;
+  padding: 0px 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.ulNavBar li:hover {
+  color: white;
+}
+
+.ulNavBar h1 {
+  padding: 0px 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.ulNavBar :hover {
+  color: white;
+}

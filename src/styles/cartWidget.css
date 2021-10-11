@@ -1,0 +1,9 @@
+.iconShoppingBag {
+  margin: 0 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.iconShoppingBag :hover {
+  color: white;
+}

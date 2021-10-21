@@ -5,7 +5,7 @@ export const NavBar = () => {
     return (
         <nav className = 'navBarContainer'>
                 <ul className = 'ulNavBar'>
-                <h1 className = 'navBarLogo'> Mi NavBar Logo </h1>
+                <h1 className = 'navBarLogo'> iCommerce </h1>
                     <li> Home </li>
                     <li> Sobre Nosotros </li>
                     <li> Contacto </li>

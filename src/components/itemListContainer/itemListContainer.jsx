@@ -1,5 +1,12 @@
+
+import ItemList from './itemList.jsx';
+import '../../styles/itemListContainer.css'
+
+
 export const ItemListContainer = () => {
-    return (
-        <p>Catalogo de ventas</p>
+    return(
+        <div className='itemListContainer'>
+            <ItemList/>
+        </div>
     )
-}
+};

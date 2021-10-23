@@ -1,5 +1,7 @@
 .itemListContainer {
+  background-color: rgb(245, 245, 247);
   display: flex;
   justify-content: space-evenly;
-  margin: 20px;
+  flex-wrap: wrap;
+  align-content: center;
 }

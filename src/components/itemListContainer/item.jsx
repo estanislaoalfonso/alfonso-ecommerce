@@ -4,10 +4,10 @@ import '../../styles/itemList.css';
 const Item = ({products}) => {
     return (
     <div className = 'itemContainer'>
-        <img src={products.photo} alt = "Macbook" className="imageItem"/>
+        <img src={products.photo} alt = "Dispositivo Apple" className="imageItem"/>
         <h2>{products.name}</h2>
         <h4>{products.price}</h4>
-        <ItemCount stock = '5' initial = '1'/>
+        <ItemCount stock = {products.stock} initial = '1'/>
     </div>
     );
 };

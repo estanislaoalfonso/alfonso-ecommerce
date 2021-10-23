@@ -1,6 +1,6 @@
 .counterContainer {
   /* border: solid 1px grey; */
-  margin: 10px 25%;
+  margin: 10px 3%;
   display: flex;
   flex-direction: column;
 }
@@ -24,10 +24,26 @@
   background-color: transparent;
   border: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .counterDateClick {
   color: grey;
   font-size: 10px;
   font-style: italic;
+}
+
+.addToBagButton {
+  background-color: #0071e3;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 7px;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+}
+
+.addToBagButton:hover {
+  background-color: #0079e3;
 }

@@ -1,0 +1,14 @@
+.iconBrandWidget {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iconBrandWidget h1 {
+  margin: 0px 0px 0px 6px;
+  font-size: 19px;
+}
+
+.iconBrand {
+  font-size: 19px;
+}

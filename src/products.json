@@ -2,35 +2,40 @@
     {
         "id": 1,
         "name": "Macbook Pro",
-        "price": 2500,
-        "photo":"https://www.macstation.com.ar/img/productos/small/2212-2134-8.jpg" 
+        "price": 3000,
+        "photo":"https://www.macstation.com.ar/img/productos/small/2212-2134-8.jpg",
+        "stock": 3
     },
 
     {
         "id": 2,
         "name": "iPad Air",
-        "price": 1200,
-        "photo":"https://www.macstation.com.ar/img/productos/small/1999-aaaa.jpg" 
+        "price": 1500,
+        "photo":"https://www.macstation.com.ar/img/productos/small/1999-aaaa.jpg",
+        "stock": 5
     },
 
     {
         "id": 3,
         "name": "iPhone 13 Pro",
-        "price": 1000,
-        "photo":"https://www.macstation.com.ar/img/productos/small/1672-1.jpg" 
+        "price": 1200,
+        "photo":"https://www.macstation.com.ar/img/productos/small/1672-1.jpg",
+        "stock": 8 
     },
 
     {
         "id": 4,
         "name": "Apple Watch",
-        "price": 1200,
-        "photo":"https://lh3.googleusercontent.com/proxy/RFMbcb-UTZYM-v_pdTUdrnxqMjTYIKj_27J-11I5YlAZLAJNsTS3UXoTFa6cVPYedVvjZYrOAap_V5QN-L8QdrJgPRrHx45rOJw-" 
+        "price": 480,
+        "photo":"https://www.macstation.com.ar/img/productos/small/2085-1.jpg",
+        "stock": 10 
     },
 
     {
         "id": 5,
         "name": "AirPods Pro",
         "price": 240,
-        "photo":"https://www.macstation.com.ar/img/productos/small/1663-apple-airpods-pro.jpg" 
+        "photo":"https://www.macstation.com.ar/img/productos/small/1663-apple-airpods-pro.jpg",
+        "stock": 20
     }
 ]

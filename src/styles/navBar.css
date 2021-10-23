@@ -26,12 +26,6 @@
   color: white;
 }
 
-.ulNavBar h1 {
-  padding: 0px 30px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-
 .ulNavBar :hover {
   color: white;
 }

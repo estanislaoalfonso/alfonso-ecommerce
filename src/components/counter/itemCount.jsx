@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../../styles/itemCount.css'
+import '../../styles/itemCount.css';
 
 export const ItemCount = ({stock, initial}) => {
 
@@ -13,7 +13,7 @@ export const ItemCount = ({stock, initial}) => {
         if (itemCounter > 1) {
             setTextOfCounter (itemCounter - 1);
         } else {
-            alert ('No puedes seleccionar menos de 1 producto a tu carrito');
+            alert ('No puedes seleccionar menos de 1 producto para tu carrito');
         }
     }
     const add = () => {
@@ -33,8 +33,9 @@ export const ItemCount = ({stock, initial}) => {
             <button className = 'counterButtons' onClick = {add}> + </button>
             </div>
             <div className = 'counterDateContainer' >
-            <h4 className = 'counterDateClick'>Últimos disponibles</h4>
+            <h4 className = 'counterDateClick'>Quedan en Stock: {stock} productos</h4>
             </div>
+            <button className= 'addToBagButton'>Add to Bag</button>
         </div>
     )
 }

@@ -7,6 +7,7 @@ const Item = ({products}) => {
         <img src={products.photo} alt = "Dispositivo Apple" className="imageItem"/>
         <h2>{products.name}</h2>
         <h4>{products.price}</h4>
+        <button className = "addToBagButton"> Detail </button>
         <ItemCount stock = {products.stock} initial = '1'/>
     </div>
     );

@@ -1,0 +1,29 @@
+.itemDetailContainer {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 1px 16px rgb(212, 212, 212);
+  transition: all 0.2s;
+}
+
+.itemDetailPhoto {
+  padding: 10px;
+}
+
+.itemDetailDetail {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.itemDetailDetail h2 {
+  font-size: 45px;
+}
+
+.itemDetailDetail h3,
+h4 {
+  font-weight: 300;
+}

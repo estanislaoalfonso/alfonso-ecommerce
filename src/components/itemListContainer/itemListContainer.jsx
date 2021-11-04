@@ -4,7 +4,7 @@ import '../../styles/itemListContainer.css'
 
 
 export const ItemListContainer = () => {
-    return(
+    return (
         <div className='itemListContainer'>
             <ItemList/>
         </div>

@@ -29,3 +29,8 @@
 .ulNavBar :hover {
   color: white;
 }
+
+.ulNavBar a {
+  text-decoration: none;
+  color: #d6d6d6;
+}

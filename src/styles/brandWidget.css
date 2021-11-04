@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: #d6d6d6;
 }
 
 .iconBrandWidget h1 {

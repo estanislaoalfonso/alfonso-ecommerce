@@ -5,7 +5,8 @@
         "price": 3000,
         "photo":"https://www.macstation.com.ar/img/productos/small/2212-2134-8.jpg",
         "stock": 3,
-        "detail": "Macbook Pro 13 Pulgadas. Chip M1 de Apple con CPU de 8 núcleos, GPU de 8 núcleos y Neural Engine de 16 núcleos. 8 GB de memoria unificada. 256 GB de almacenamiento SSD. Batería integrada (20 horas). Trackpad Force Touch."
+        "detail": "Macbook Pro 13 Pulgadas. Chip M1 de Apple con CPU de 8 núcleos, GPU de 8 núcleos y Neural Engine de 16 núcleos. 8 GB de memoria unificada. 256 GB de almacenamiento SSD. Batería integrada (20 horas). Trackpad Force Touch.",
+        "category": "Mac"
     },
 
     {
@@ -14,7 +15,8 @@
         "price": 1500,
         "photo":"https://www.macstation.com.ar/img/productos/small/1999-aaaa.jpg",
         "stock": 5,
-        "detail": "El iPad Air hace más que un ordenador y usarlo es tan fácil que a veces parece magia. Y con las nuevas prestaciones es más versátil que nunca."
+        "detail": "El iPad Air hace más que un ordenador y usarlo es tan fácil que a veces parece magia. Y con las nuevas prestaciones es más versátil que nunca.",
+        "category": "iPad"
     },
 
     {
@@ -23,7 +25,9 @@
         "price": 1200,
         "photo":"https://www.macstation.com.ar/img/productos/small/1672-1.jpg",
         "stock": 8,
-        "detail": "El 5G llega al Pro. El chip A14 Bionic no admite comparación con el de ningún otro smartphone. El avanzado sistema de cámaras lleva la fotografía con poca iluminación a otro nivel y alcanza su máxima expresión en el iPhone 13 Pro Max. Y el Ceramic Shield ofrece cuatro veces más resistencia a las caídas. El iPhone 13 Pro abre un universo de posibilidades. ¿Te atreves?"
+        "detail": "El 5G llega al Pro. El chip A14 Bionic no admite comparación con el de ningún otro smartphone. El avanzado sistema de cámaras lleva la fotografía con poca iluminación a otro nivel y alcanza su máxima expresión en el iPhone 13 Pro Max. Y el Ceramic Shield ofrece cuatro veces más resistencia a las caídas. El iPhone 13 Pro abre un universo de posibilidades. ¿Te atreves?",
+        "category": "iPhone"
+
     },
 
     {
@@ -32,7 +36,8 @@
         "price": 480,
         "photo":"https://www.macstation.com.ar/img/productos/small/2085-1.jpg",
         "stock": 10,
-        "detail": "Una gran pantalla Retina para que tengas más información de un solo vistazo. Sensores avanzados que registran todas tus formas de moverte. Prestaciones increíbles que velan por tu salud. Cuanto más conozcas el Apple Watch SE, más te sorprenderá." 
+        "detail": "Una gran pantalla Retina para que tengas más información de un solo vistazo. Sensores avanzados que registran todas tus formas de moverte. Prestaciones increíbles que velan por tu salud. Cuanto más conozcas el Apple Watch SE, más te sorprenderá.",
+        "category": "Watch" 
     },
 
     {
@@ -41,6 +46,7 @@
         "price": 240,
         "photo":"https://www.macstation.com.ar/img/productos/small/1663-apple-airpods-pro.jpg",
         "stock": 20,
-        "detail": "Su diseño a medida se ajusta a la forma del oido y ofrece un aislamiento ideal para la cancelación activa de ruido. Es como si dentro de tus oídos solo hubiera música."
+        "detail": "Su diseño a medida se ajusta a la forma del oido y ofrece un aislamiento ideal para la cancelación activa de ruido. Es como si dentro de tus oídos solo hubiera música.",
+        "category": "AirPods" 
     }
 ]

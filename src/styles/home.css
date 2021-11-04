@@ -1,0 +1,18 @@
+.homeApple {
+  background-image: url("../images/appleHome.jpg");
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeApple {
+  color: white;
+  font-size: 150px;
+}
+
+.homeApple p {
+  margin: 1em 0 14px 0;
+}

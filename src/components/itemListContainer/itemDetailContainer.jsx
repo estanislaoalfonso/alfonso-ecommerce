@@ -9,7 +9,7 @@ export const ItemDetailContainer = () => {
     const [detailProduct, setDetailProduct] = useState(null);
     const { itemDetailId } = useParams();
 
-    console.log ("itemDetailId es:", itemDetailId);
+    // console.log ("itemDetailId es:", itemDetailId);
     // console.log ("itemDetaiPARAMS", useParams ());
 
     //PROMISE
@@ -25,7 +25,7 @@ export const ItemDetailContainer = () => {
             return null;
         });
         //Acá, tengo el elemento que quiero filtrar. Al que quiero acceder para ver su detalle, porque coincide el ID.
-        console.log("filterData =>", filterData);
+        // console.log("filterData =>", filterData);
 
         setTimeout(() => {
             //Acá seteo un tiempo de respuesta donde, si filterdata es verdadero, entonces resuelvo con el objeto, si no, agarro el error.

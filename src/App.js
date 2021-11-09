@@ -6,28 +6,29 @@ import {ItemDetailContainer} from './components/itemListContainer/itemDetailCont
 import { Cart } from './components/cart/cart';
 import { Home } from './components/home/home';
 
+
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar/>
-      <Switch> 
-        <Route exact path = "/"> 
-          <Home/>
-        </Route>
-        <Route exact path = "/category/:categoryId">
-          <ItemListContainer/>
-        </Route>
-        <Route exact path = "/itemListContainer">
+      <BrowserRouter>
+        <NavBar/>
+        <Switch> 
+          <Route exact path = "/"> 
+            <Home/>
+          </Route>
+          <Route exact path = "/category/:categoryId">
             <ItemListContainer/>
-        </Route>
-        <Route exact path="/itemDetailContainer/:itemDetailId">
-            <ItemDetailContainer/>
-        </Route>
-        <Route exact path = "/cart"> 
-          <Cart/>
-        </Route>
-      </Switch>
-    </BrowserRouter>
+          </Route>
+          <Route exact path = "/itemListContainer">
+              <ItemListContainer/>
+          </Route>
+          <Route exact path="/itemDetailContainer/:itemDetailId">
+              <ItemDetailContainer/>
+          </Route>
+          <Route exact path = "/cart"> 
+            <Cart/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
   );
 }
 

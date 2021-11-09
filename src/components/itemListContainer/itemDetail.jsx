@@ -7,18 +7,27 @@ import { Link } from 'react-router-dom';
 
 const ItemDetail = ({productsDetail}) => {
     const [flag, setFlag] = useState (true)
-    const [itemQuantity, setItemQuantity] = useState (0);
-
-    const onAdd = (itemQuantity) => {
-        setItemQuantity (itemQuantity);
-    }
+    const [itemQuantity, setItemQuantity] = useState (1);
 
     const addToBag = () => {
         setFlag (false);
     }
 
-    
+    const remove = () => {
+        if (itemQuantity > 1) {
+            setItemQuantity (itemQuantity - 1);
+        } else {
+            alert ('No puedes elegir menos de 1 producto para el carrito');
+        }
+    }
 
+    const add = () => {
+        if (itemQuantity >= productsDetail.stock) {
+            alert ('No tenemos más stock del solicitado');
+        } else {
+            setItemQuantity (itemQuantity + 1);
+        }
+    }
 
     return (
         <div className = 'itemDetailContainer'>
@@ -30,7 +39,7 @@ const ItemDetail = ({productsDetail}) => {
                 <h3>$ {productsDetail.price}</h3>
                 <h4>{productsDetail.detail}</h4>
                 <div>
-                    {flag && <ItemCount stock = {productsDetail.stock} initial = '1' onAdd = {() => onAdd (itemQuantity)}/> }
+                    {flag && <ItemCount stock = {productsDetail.stock} itemQuantity = {itemQuantity} onAdd = {add} onRemove = {remove}/>}
                     {flag && <button onClick = {() => addToBag()} className= 'addToBagButton' >Add to Bag</button>}
                 </div>
                 <div>

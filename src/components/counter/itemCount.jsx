@@ -28,14 +28,13 @@ export const ItemCount = ({stock, initial}) => {
         //onClick, es la clásica funcion al hacer click y le paso la prop onTitle para que en la App sea la propiedad que me permita arrojar la función handleTitle.-
         <div className = 'counterContainer'>
             <div className = 'counterInfoContainer'>
-            <button className = 'counterButtons' onClick = {remove}> - </button>
-            <h1 className = 'counterData'> {itemCounter} </h1>
-            <button className = 'counterButtons' onClick = {add}> + </button>
+                <button className = 'counterButtons' onClick = {remove}> - </button>
+                <h1 className = 'counterData'> {itemCounter} </h1>
+                <button className = 'counterButtons' onClick = {add}> + </button>
             </div>
             <div className = 'counterDateContainer' >
-            <h4 className = 'counterDateClick'>Quedan en Stock: {stock} productos</h4>
+                <h4 className = 'counterDateClick'>Quedan en Stock: {stock} productos</h4>
             </div>
-            <button className= 'addToBagButton'>Add to Bag</button>
         </div>
     )
 }

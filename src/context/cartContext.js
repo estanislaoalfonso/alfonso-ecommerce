@@ -39,8 +39,17 @@ export const CartProvider = ({children}) => {
         cart.clear();
     }
 
+    const itemIsInCart = (item) => {
+        const includeItem = cart.findIndex(product => product.id === item.id);
+        if (includeItem >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-    return (<CartContext.Provider value = {{cart, addItem, removeItem, clear}}> {children}
+
+    return (<CartContext.Provider value = {{cart, addItem, removeItem, clear, itemIsInCart}}> {children}
     </CartContext.Provider>
     );
 }

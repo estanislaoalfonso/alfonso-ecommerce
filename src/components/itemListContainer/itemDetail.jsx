@@ -30,7 +30,7 @@ const ItemDetail = ({productsDetail}) => {
             setItemQuantity (itemQuantity + 1);
         }
     }
-    
+
     const remove = () => {
         if (itemQuantity > 1) {
             setItemQuantity (itemQuantity - 1);
@@ -38,7 +38,6 @@ const ItemDetail = ({productsDetail}) => {
             alert ('No puedes elegir menos de 1 producto para el carrito');
         }
     }
-
 
     return (
         <div className = 'itemDetailContainer'>

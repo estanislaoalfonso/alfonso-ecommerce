@@ -17,15 +17,15 @@ const ItemDetail = ({productsDetail}) => {
         //itemQuantity = estado que tengo en el itemDetail.
         addItem (productsDetail, itemQuantity);
         const includeItem = cart.findIndex(product => product.id === productsDetail.id);
-        if (includeItem < 0) {
+        if (includeItem <= 0) {
             setFlag (false);
         }
     }
-    console.log (cart);
+    // console.log (cart);
 
     const add = () => {
         if (itemQuantity >= productsDetail.stock) {
-            alert ('No tenemos más stock del solicitado');
+            alert ('No puedes comprar más del stock disponible');
         } else {
             setItemQuantity (itemQuantity + 1);
         }

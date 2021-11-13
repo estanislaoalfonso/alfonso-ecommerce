@@ -6,7 +6,6 @@ import '../../styles/itemCount.css';
 export const ItemCount = ({stock, itemQuantity, onAdd, onRemove}) => {
 
     return (
-        //onClick, es la clásica funcion al hacer click y le paso la prop onTitle para que en la App sea la propiedad que me permita arrojar la función handleTitle.-
         <div className = 'counterContainer'>
             <div className = 'counterInfoContainer'>
                 <button className = 'counterButtons' onClick = {onRemove}> - </button>

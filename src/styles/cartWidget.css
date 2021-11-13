@@ -7,4 +7,108 @@
 
 .iconShoppingBag :hover {
   color: white;
+  margin: 0px;
+}
+
+.quantNumber {
+  font-size: 10px;
+  background-color: transparent;
+  margin: 0px;
+  margin-left: 2px;
+}
+
+.buttonDropdown {
+  background-color: transparent !important;
+  border: 0px !important;
+}
+
+.iconNavBar {
+  display: flex;
+  align-items: center;
+}
+
+.bagImg {
+  width: 60px;
+}
+
+.dropdown-menu {
+  width: 344px;
+  margin-top: 15px !important;
+  padding: 0 20px !important;
+  border-radius: 18px !important;
+}
+
+.dropdown-item {
+  padding: 16px 0 !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.addToBagButton2 {
+  width: 90% !important;
+  margin-left: 5% !important;
+  background-color: #0071e3 !important;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+.addToBagButton2:hover {
+  background-color: #0079e3 !important;
+  margin: 0;
+}
+
+.bagWidgetAnchor {
+  color: #0071e3 !important;
+}
+
+.bagWidgetAnchor:hover {
+  text-decoration: underline !important;
+}
+
+.prodQuantDesc {
+  color: #a3a3a7;
+  margin-bottom: 0px;
+}
+
+.prodQuantDesc:hover {
+  color: #a3a3a7 !important;
+}
+
+.dropDownContainer {
+  display: flex !important;
+}
+
+.dropDownContainer:hover {
+  background-color: transparent !important;
+  color: initial !important;
+}
+
+.dropDownContainerIMG {
+  margin-right: 10px !important;
+}
+
+.dropDownContainerIMG:hover {
+  margin-right: 10px !important;
+}
+
+.prodDescName {
+  color: black !important;
+  margin: 0 !important;
+}
+
+.prodDescName:hover {
+  color: black !important;
+  margin: 0px !important;
+}
+
+.dropdown-divider {
+  margin: 0px !important;
+}
+
+.iconNavBarTransparent {
+  opacity: 0%;
 }

@@ -20,23 +20,39 @@ export const CartProvider = ({children}) => {
             //Agrego la propiedad QUANTITY al objeto, luego, lo sumo al cart con el useState.
             const itemWithQuantity = {
                 ...item,
+                stock: item.stock - itemQuantity,
                 quantity: itemQuantity
             }
+            
             setCart([...cart, itemWithQuantity]);
+        } else if ((includeItem >= 0) && (itemQuantity <= cart[includeItem].stock)) {
+            cart[includeItem].quantity = cart[includeItem].quantity + itemQuantity;
+            cart[includeItem].stock = cart[includeItem].stock - itemQuantity;
+            console.log('Este es el nuevo stock del producto', cart[includeItem].stock)
         } else {
-            alert ('Ya tienes este elemento en el carrito');
+            alert ('No puedes comprar más del stock disponible');
         }
     }
 
-    const removeItem = (item) => {
+    const removeItem = (item, itemQuantity) => {
+        //Le paso la prop itemQuantity, que en el itemDetail es el valor almacenado en el useState de la Quantity.
+        console.log('esto es item quantity', itemQuantity);
+
         //Me guardo en una variable, el index que encuentro cuando al cart (array) le hago el findIndex y le paso la condicion tal que el id del producto sea exactamente igual que el id del parametro que le paso x la función "removeItem".
         const itemToDelete = cart.findIndex (product => product.id === item.id);
-        cart.splice (itemToDelete,1);
-        setCart(cart);
+        // console.log ('Este es el elemento que quiero borrar', cart[itemToDelete])
+        if (cart[itemToDelete].quantity > 1) {
+            cart[itemToDelete].quantity = itemQuantity - 1;
+        } else { 
+            cart.splice (itemToDelete,1);
+            setCart(cart);
+        }
+        console.log(cart[itemToDelete]);
     }
 
     const clear = () => {
-        cart.clear();
+        cart.splice(0, cart.length);
+        setCart(cart);
     }
 
     const itemIsInCart = (item) => {

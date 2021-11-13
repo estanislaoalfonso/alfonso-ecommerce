@@ -16,6 +16,10 @@
   margin: 7px;
 }
 
+.itemContainer h2 {
+  font-size: 1.5em;
+}
+
 .itemContainer:hover {
   transform: scale(1.03);
 }

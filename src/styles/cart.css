@@ -1,10 +1,137 @@
 .cartContainer {
-  background-color: rgb(245, 245, 247);
   color: #333333;
-  font-size: 150px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin: 5% 20%;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 40px;
+}
+
+.imgCart {
+  width: 200px;
+}
+
+.prodDescContainer {
+  margin-left: 20px;
+}
+
+.prodNamePriceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prodDescContainer h1 {
+  font-size: 25px;
+  font-weight: 600;
+  /* line-height: 1.16667; */
+}
+
+.prodDescContainer h2 {
+  font-size: 20px;
+}
+
+.prodDescPrice {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px;
+  /* line-height: 1.16667; */
+}
+
+.prodDescDetail {
+  font-size: 14px;
+  line-height: 1.42859;
+}
+.productName p {
+  margin: 0px;
+}
+
+.productDescription p {
+  margin: 5px;
+}
+
+.prodDescQtty {
+  font-size: 15px;
+  color: #a3a3a7;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 20px;
+}
+
+.prodDescButton {
+  border: none;
+  background-color: transparent;
+  color: #06c;
+  padding: 0px;
+  font-size: 17px;
+}
+
+.prodDescButton:hover {
+  text-decoration: underline;
+}
+
+.clearBagButton {
+  width: 80%;
+  /* margin-left: 5%; */
+  background-color: #0071e3;
+  color: white;
+  padding: 18px 31px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.clearbagbutton:hover {
+  background-color: #0079e3;
+}
+
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 41%;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  padding: 24px 32px 28px;
+}
+
+.checkOut p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+
+.emptyBagContainer {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.emptyBagContainer p {
+  color: #a3a3a7;
+  font-size: 8em;
+}
+
+.buttonEmptyBag {
+  width: 18%;
+  /* margin-left: 5%; */
+  background-color: #0071e3;
+  padding: 18px 31px;
+  border: none;
+  border-radius: 8px;
+}
+
+.buttonEmptyBagLink {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.buttonEmptyBag:hover {
+  background-color: #0079e3;
 }

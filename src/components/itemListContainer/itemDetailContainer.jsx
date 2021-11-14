@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import Products from '../../products.json';
-import ItemDetail from '../itemListContainer/itemDetail'
+import ItemDetail from './itemDetail'
 import Loader from "react-spinners/PuffLoader";
 import '../../styles/itemDetail.css'
 import { useParams } from "react-router";

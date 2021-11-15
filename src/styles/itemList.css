@@ -23,7 +23,3 @@
 .itemContainer:hover {
   transform: scale(1.03);
 }
-
-.imageItem {
-  width: 80%;
-}

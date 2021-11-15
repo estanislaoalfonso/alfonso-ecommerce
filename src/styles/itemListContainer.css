@@ -7,3 +7,57 @@
   width: 100vw;
   height: 100vh;
 }
+
+.itemListContainerTitle {
+  background-color: rgb(245, 245, 247);
+  color: #6e6e73;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.08349;
+}
+
+.itemListContainerTitle span {
+  color: black;
+}
+
+.tileContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 247);
+  align-items: center;
+  height: 50%;
+  padding: 10px 20%;
+}
+
+.itemListContainerSpecialist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 18px;
+  margin: 38px 50px;
+  width: 750px;
+  height: 500px;
+  background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-specialist-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626296836000");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 1px 16px rgb(212, 212, 212);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.itemListContainerSpecialist:hover {
+  box-shadow: 0px 1px 16px 15px rgb(212, 212, 212);
+  transform: scale(1.03);
+}
+
+.itemListContainerSpecialist h3 {
+  font-size: 28px;
+  padding: 40px;
+}
+
+.specialistImg {
+  width: 100%;
+  object-fit: cover;
+}

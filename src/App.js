@@ -6,6 +6,7 @@ import {ItemDetailContainer} from './components/itemListContainer/itemDetailCont
 import { Cart } from './components/cart/cart';
 import { Home } from './components/home/home';
 import {CartProvider} from './context/CartContext';
+import ItemList from './components/itemListContainer/itemList';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
               <Home/>
             </Route>
             <Route exact path = "/category/:categoryId">
-              <ItemListContainer/>
+              <ItemList/>
             </Route>
             <Route exact path = "/itemListContainer">
                 <ItemListContainer/>

@@ -18,10 +18,18 @@ export const ItemListContainer = () => {
     }, [])
     
     return (
-        <div className='itemListContainer'>
-            {productos.length ? productos.map ((productoMapeado) => (
-            <Item products = {productoMapeado} key = {productoMapeado.id}/>
-        )) : <Loader/>}
+        <div>
+            <div className = 'tileContainer'>
+                    <h1 className = 'itemListContainerTitle'><span>Store.</span> The best way to buy the products you love.</h1>
+                <div className = 'itemListContainerSpecialist'>
+                    <h3>Shop one on one with a Specialist. Online or in store.</h3>
+                </div>
+            </div>
+            <div className='itemListContainer'>
+                {productos.length ? productos.map ((productoMapeado) => (
+                <Item products = {productoMapeado} key = {productoMapeado.id}/>
+            )) : <Loader/>}
+            </div>
         </div>
     )
 };

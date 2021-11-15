@@ -33,7 +33,7 @@ export const Cart = () => {
                 <button className = 'buttonEmptyBag'><Link to = '/itemListContainer' className = 'buttonEmptyBagLink'>Continue Shopping</Link></button> 
             </div>
             : cart.map ((product) => (
-                <div>
+                <div key = {product.id}>
                 <div key = {product.id} className='cartContainer'>
 
                     <div className = 'imgContainer'>

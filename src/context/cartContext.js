@@ -55,17 +55,8 @@ export const CartProvider = ({children}) => {
         setCart(cart);
     }
 
-    const itemIsInCart = (item) => {
-        const includeItem = cart.findIndex(product => product.id === item.id);
-        if (includeItem >= 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
-
-    return (<CartContext.Provider value = {{cart, addItem, removeItem, clear, itemIsInCart}}> {children}
+    return (<CartContext.Provider value = {{cart, addItem, removeItem, clear}}> {children}
     </CartContext.Provider>
     );
 }

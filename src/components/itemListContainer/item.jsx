@@ -8,7 +8,7 @@ const Item = ({products}) => {
         <img src={products.photo} alt = "Dispositivo Apple" className="imageItem"/>
         <h2>{products.name}</h2>
         <h4>$ {products.price}</h4>
-        <button className = "addToBagButton"><Link to = {`/itemDetailContainer/${products.id}`}> Detail </Link></button>  
+        <button className = "detailButton"><Link to = {`/itemDetailContainer/${products.id}`}> Detail </Link></button>  
     </div>
     );
 };

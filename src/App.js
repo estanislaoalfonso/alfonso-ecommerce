@@ -5,6 +5,7 @@ import { ItemListContainer } from './components/itemListContainer/itemListContai
 import {ItemDetailContainer} from './components/itemListContainer/itemDetailContainer';
 import { Cart } from './components/cart/cart';
 import { Home } from './components/home/home';
+import { Footer } from './components/footer/footer';
 import {CartProvider} from './context/CartContext';
 import ItemList from './components/itemListContainer/itemList';
 
@@ -31,6 +32,7 @@ function App() {
               <Cart/>
             </Route>
           </Switch>
+          <Footer/>
         </BrowserRouter>
     </CartProvider>
   );

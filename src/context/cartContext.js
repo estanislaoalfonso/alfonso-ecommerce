@@ -13,50 +13,94 @@ export const useCartContext = () => {
 export const CartProvider = ({children}) => {
 
     const [cart, setCart] = useState ([])
-    
+    const [inCart, setInCart] = useState (false);
+    const [totalFinal, setTotalFinal] = useState (0)
+
+    const handleIsInCart = (item) => {
+        const findedInCart = cart.findIndex(product => product.id === item.id)
+        if (findedInCart >= 0) {
+            setInCart (true)
+        } else {
+            setInCart (false)
+        }
+    }
+
     const addItem = (item, itemQuantity) => {
-        const includeItem = cart.findIndex(product => product.id === item.id);
-        if (includeItem < 0) {
-            //Agrego la propiedad QUANTITY al objeto, luego, lo sumo al cart con el useState.
+        const cartDraft = [...cart]
+        const itemFinded = cart.findIndex(product => product.id === item.id);
+        if (itemFinded < 0) {
+            
             const itemWithQuantity = {
                 ...item,
                 stock: item.stock - itemQuantity,
                 quantity: itemQuantity
             }
             
-            setCart([...cart, itemWithQuantity]);
-        } else if ((includeItem >= 0) && (itemQuantity <= cart[includeItem].stock)) {
-            cart[includeItem].quantity = cart[includeItem].quantity + itemQuantity;
-            cart[includeItem].stock = cart[includeItem].stock - itemQuantity;
-            console.log('Este es el nuevo stock del producto', cart[includeItem].stock)
+            setCart([...cartDraft, itemWithQuantity]);
+            sumarTotales(cartDraft)
+            handleIsInCart(cartDraft)
+        } else if ((itemFinded >= 0) && (itemQuantity <= cartDraft[itemFinded].stock)) {
+            cartDraft[itemFinded].quantity = cartDraft[itemFinded].quantity + itemQuantity;
+            cartDraft[itemFinded].stock = cartDraft[itemFinded].stock - itemQuantity;
+            // console.log('Este es el nuevo stock del producto', cartDraft[itemFinded].stock)
+            // console.log(cartDraft[itemFinded]);
+            sumarTotales(cartDraft)
         } else {
             alert ('No puedes comprar más del stock disponible');
         }
     }
-
+    
     const removeItem = (item, itemQuantity) => {
+        const cartDraft = [...cart]
         //Le paso la prop itemQuantity, que en el itemDetail es el valor almacenado en el useState de la Quantity.
-        console.log('esto es item quantity', itemQuantity);
 
-        //Me guardo en una variable, el index que encuentro cuando al cart (array) le hago el findIndex y le paso la condicion tal que el id del producto sea exactamente igual que el id del parametro que le paso x la función "removeItem".
-        const itemToDelete = cart.findIndex (product => product.id === item.id);
-        // console.log ('Este es el elemento que quiero borrar', cart[itemToDelete])
-        if (cart[itemToDelete].quantity > 1) {
-            cart[itemToDelete].quantity = itemQuantity - 1;
+        const itemToDelete = cartDraft.findIndex (product => product.id === item.id);
+
+        if (cartDraft[itemToDelete].quantity > 1) {
+            cartDraft[itemToDelete].quantity = itemQuantity - 1;
+            cartDraft[itemToDelete].stock = cartDraft[itemToDelete].stock + 1;
+            sumarTotales(cartDraft)
         } else { 
-            cart.splice (itemToDelete,1);
-            setCart(cart);
+            cartDraft.splice (itemToDelete,1);
+            setCart(cartDraft);
+            sumarTotales(cartDraft);
+            handleIsInCart(cartDraft);
         }
-        console.log(cart[itemToDelete]);
+
+    }
+
+    const addMoreItems = (item, itemQuantity) => {
+        const cartDraft = [...cart];
+        const itemFinded = cartDraft.findIndex (product => product.id === item.id);
+
+        if (cart[itemFinded].stock > 0) {
+            cartDraft[itemFinded].quantity = itemQuantity + 1;
+            cartDraft[itemFinded].stock = cartDraft[itemFinded].stock - 1;
+            sumarTotales(cartDraft);
+        } else {
+            alert ('No nos queda más stock de este producto!')
+        }
     }
 
     const clear = () => {
-        cart.splice(0, cart.length);
-        setCart(cart);
+        const cartDraft = [...cart]
+        cartDraft.splice(0, cart.length);
+        setCart(cartDraft);
+        sumarTotales(cartDraft);
+        handleIsInCart(cartDraft);
+    }
+
+    const sumarTotales = (product) => {
+        let totalGastado = 0;
+        for (product of cart) {
+        let totalProducto = product.quantity * product.price;
+            totalGastado = totalProducto + totalGastado;
+        } 
+        setTotalFinal(totalGastado);
     }
 
 
-    return (<CartContext.Provider value = {{cart, addItem, removeItem, clear}}> {children}
+    return (<CartContext.Provider value = {{cart, handleIsInCart, inCart, addItem, removeItem, addMoreItems, clear, totalFinal, sumarTotales}}> {children}
     </CartContext.Provider>
     );
 }

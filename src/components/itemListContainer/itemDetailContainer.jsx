@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
 
         const item = doc(db, 'items',itemDetailId); // Me traigo la data, por params van el db anterior, mi base de datos y el id que me quiero traer, en este caso, del useparams, que va a matchear con el id de Firebase.
         getDoc (item).then((snapshot) => {
-            // console.log(snapshot);
+            // console.log('Este es el snapshot', snapshot);
             if (snapshot.exists()) {
                 setDetailProduct(snapshot.data());
             }

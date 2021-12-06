@@ -1,11 +1,16 @@
+.itemListContainerGeneral {
+  background-color: rgb(245, 245, 247);
+  padding: 0 20%;
+}
+
 .itemListContainer {
   background-color: rgb(245, 245, 247);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: flex-start;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  /* padding: 0 20%; */
 }
 
 .itemListContainerTitle {
@@ -14,19 +19,20 @@
   font-size: 48px;
   font-weight: 600;
   line-height: 1.08349;
+  padding-left: 30px;
 }
 
 .itemListContainerTitle span {
   color: black;
 }
 
-.tileContainer {
+.titleContainer {
   display: flex;
   justify-content: space-between;
   background-color: rgb(245, 245, 247);
   align-items: center;
   height: 50%;
-  padding: 10px 20%;
+  /* padding: 10px 12%; */
 }
 
 .itemListContainerSpecialist {
@@ -39,8 +45,8 @@
   width: 750px;
   height: 500px;
   background-image: url("https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-specialist-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626296836000");
-  background-size: cover;
-  background-position: center;
+  background-size: 550px;
+  background-position: bottom;
   background-repeat: no-repeat;
   box-shadow: 0px 1px 16px rgb(212, 212, 212);
   cursor: pointer;
@@ -54,10 +60,22 @@
 
 .itemListContainerSpecialist h3 {
   font-size: 28px;
-  padding: 40px;
+  padding: 40px 60px 40px 40px;
 }
 
 .specialistImg {
   width: 100%;
   object-fit: cover;
+}
+
+.itemListTitle {
+  font-size: 27px;
+  font-weight: 600;
+  /* padding: 30px 20% 0 20%; */
+  margin: 0;
+  background-color: rgb(245, 245, 247);
+}
+
+.itemListTitle span {
+  color: #6e6e73;
 }

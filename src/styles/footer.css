@@ -1,0 +1,20 @@
+.footerContainer {
+  background-color: #f5f5f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footerImage {
+  width: 100em;
+  height: 40em;
+  background-image: url(../images/footer.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footerImage:hover {
+  cursor: pointer;
+}

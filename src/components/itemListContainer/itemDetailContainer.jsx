@@ -10,21 +10,21 @@ import { doc, getDoc } from "firebase/firestore";
 
 export const ItemDetailContainer = () => {
     const [detailProduct, setDetailProduct] = useState(null);
-    const { itemDetailId } = useParams();
+    const { id } = useParams();
 
     // console.log ("itemDetailId es:", itemDetailId);
     // console.log ("itemDetaiPARAMS", useParams ());
     useEffect (() => {
-        const db = getFirestore(); // recibo la DataBase. Esta función llega desde index.js de Firebase
+        const db = getFirestore();
 
-        const item = doc(db, 'items',itemDetailId); // Me traigo la data, por params van el db anterior, mi base de datos y el id que me quiero traer, en este caso, del useparams, que va a matchear con el id de Firebase.
+        const item = doc(db, 'items',id); // Me traigo la data, por params van el db anterior, mi base de datos y el id que me quiero traer, en este caso, del useparams, que va a matchear con el id de Firebase.
         getDoc (item).then((snapshot) => {
-            // console.log('Este es el snapshot', snapshot);
             if (snapshot.exists()) {
-                setDetailProduct(snapshot.data());
+                const products = {...snapshot.data(), id: id}
+                setDetailProduct(products);
             }
         })
-    },[itemDetailId])
+    },[id])
 
     return (
         <div className="itemDetailContainer2">

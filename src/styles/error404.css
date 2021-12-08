@@ -1,0 +1,32 @@
+.errorContainer {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.errorContainer h1 {
+  font-size: 5em;
+  color: #b6b6b6;
+}
+
+.errorContainer button {
+  margin-top: 10px;
+  width: 150px;
+  background-color: #0071e3;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.errorContainer button:hover {
+  background-color: #0079e3;
+}
+
+.errorContainer a {
+  color: white;
+  text-decoration: none;
+}

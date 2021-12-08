@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext'
-import '../../styles/cart.css'
+import '../../styles/cart.css';
 
 export const Cart = () => {
     const {cart, removeItem, addMoreItems, clear, totalFinal, sumarTotales} = useCartContext();
-    console.log (cart);
     
     useEffect (() => {
         sumarTotales(cart);
@@ -17,14 +16,6 @@ export const Cart = () => {
     const sumaTotalIndividual = (product) => {
         let totalIndividual = product.price * product.quantity
         return totalIndividual
-    }
-    
-    const sendOrder = () => {
-        const order = {
-            buyer: {name: "nombre", phone: "11111111", email: 'a@a.com'},
-            items: [cart],
-            total: totalFinal
-        }
     }
 
     return (
@@ -77,12 +68,14 @@ export const Cart = () => {
                     </div>
                 </div>
             ))}
-            <div className = 'checkOut'>
-                        <p>Total general: $ {totalFinal}</p>
-                        <button onClick = {clear} className = 'clearBagButton'> Clear bag </button>
-            </div>
-            <div className = 'checkOut'>
-                <button onClick = {sendOrder} className = 'clearBagButton'> Finalizar Compra </button>
+            <div className = 'checkOutContainer'>
+                <div className = 'checkOut'>
+                    <button onClick = {clear} className = 'clearBagButtonDanger'> Clear bag </button>
+                </div>
+                <div className = 'checkOut'>
+                    <p>Total general: $ {totalFinal}</p>
+                    <button className = 'clearBagButton'> <Link to = "/form">Check Out</Link> </button>
+                </div>
             </div>
             </div>}
         </div>

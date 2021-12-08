@@ -10,11 +10,14 @@ export const ItemListContainer = () => {
     
     useEffect (() => {
         const db = getFirestore();
-
-        getDocs(collection(db,'items')).then( (snapshot) => {
-            // console.log (snapshot.docs.map((doc) => doc.data()));
-            setProductos (snapshot.docs.map((doc) => doc.data()));
-        })
+        
+        getDocs(collection(db,'items'))
+        // console.log (snapshot.docs.map((doc) => doc.data()));
+        .then ((snapshot) => {
+            setProductos(
+                snapshot.docs.map((doc)=> ({...doc.data(), id: doc.id})  
+                ));
+        });
     }, [])
     
     return (

@@ -94,6 +94,7 @@
   color: #06c;
   padding: 0px;
   font-size: 17px;
+  margin-right: 10px;
 }
 
 .prodDescButton:hover {
@@ -111,8 +112,24 @@
   font-size: 18px;
 }
 
-.clearbagbutton:hover {
+.clearBagButton a {
+  color: white;
+  text-decoration: none;
+}
+
+.clearBagButton:hover {
   background-color: #0079e3;
+}
+
+.clearBagButtonDanger {
+  width: 80%;
+  /* margin-left: 5%; */
+  background-color: #e4413f;
+  color: white;
+  padding: 18px 31px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
 }
 
 .checkOut {
@@ -120,8 +137,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  margin: 0 41%;
+  width: 30%;
   background-color: #f5f5f7;
   border-radius: 12px;
   padding: 24px 32px 28px;
@@ -133,14 +149,20 @@
   margin-bottom: 33px;
 }
 
+.checkOutContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 25%;
+  margin-bottom: 100px;
+}
+
 .emptyBagContainer {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
   align-items: center;
   align-content: center;
   justify-content: center;
+  margin: 150px 0;
 }
 
 .emptyBagContainer p {

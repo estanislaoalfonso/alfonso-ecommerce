@@ -5,9 +5,11 @@ import { ItemListContainer } from './components/itemListContainer/itemListContai
 import {ItemDetailContainer} from './components/itemListContainer/itemDetailContainer';
 import { Cart } from './components/cart/cart';
 import { Home } from './components/home/home';
+import { Error404 } from './components/error404/error404'
 import { Footer } from './components/footer/footer';
 import {CartProvider} from './context/CartContext';
 import ItemList from './components/itemListContainer/itemList';
+import { Form } from './components/form/form';
 
 
 function App() {
@@ -25,11 +27,17 @@ function App() {
             <Route exact path = "/itemListContainer">
                 <ItemListContainer/>
             </Route>
-            <Route exact path="/itemDetailContainer/:itemDetailId">
+            <Route exact path="/itemDetailContainer/:id">
                 <ItemDetailContainer/>
             </Route>
             <Route exact path = "/cart"> 
               <Cart/>
+            </Route>
+            <Route exact path = "/form"> 
+              <Form/>
+            </Route>
+            <Route> 
+              <Error404/>
             </Route>
           </Switch>
           <Footer/>

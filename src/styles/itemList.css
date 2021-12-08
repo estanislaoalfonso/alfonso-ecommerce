@@ -84,3 +84,10 @@ h2 {
 .titleHere span {
   color: black;
 }
+
+.itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

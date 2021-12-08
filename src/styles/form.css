@@ -1,0 +1,117 @@
+.formGlobalContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 8% 25%;
+}
+
+.titleForm {
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 27px;
+}
+
+.titleForm p {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding-top: 34px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer p {
+  color: #494949;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin: 20px 13px;
+}
+
+.formContainer input {
+  box-shadow: none;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #d6d6d6;
+}
+
+.formButton {
+  background-color: #0071e3;
+  color: white;
+  padding: 18px 31px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 50px 30%;
+}
+
+.formButton:hover {
+  background-color: #0079e3;
+}
+
+.orderGlobalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+  margin: 100px 100px;
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.orderContainer h3 {
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: 0.008em;
+  color: #494949;
+}
+
+.orderContainer h5 {
+  font-size: 25px;
+  color: #b6b6b6;
+}
+
+.orderContainer h6 {
+  font-size: 20px;
+  color: #b6b6b6;
+}
+
+.orderContainer p {
+  font-size: 20px;
+  color: rgba(2, 170, 25, 0.945);
+}
+
+.orderContainer button {
+  background-color: #0071e3;
+  padding: 18px 31px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 26px 0;
+  text-decoration: none;
+  width: 200px;
+}
+
+.orderContainer a {
+  color: white;
+  text-decoration: none;
+}
+
+.orderImage {
+  width: 35em;
+  height: inherit;
+  background-image: url("https://i.imgur.com/t556h0U.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 25px 10px grey;
+  border-radius: 20px;
+}

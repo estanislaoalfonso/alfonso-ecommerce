@@ -17,9 +17,11 @@ import '../../styles/itemList.css'
         const q = query (collection (db, 'items'),where ('category', '==', categoryId));
 
         getDocs(q).then((snapshot) => {
-            setProductos(snapshot.docs.map((doc)=> doc.data()));
+            setProductos(
+                snapshot.docs.map((doc)=> ({...doc.data(), id: doc.id})  
+                ));
         });
-    }, [categoryId])
+    }, [categoryId, productos])
 
 
     return (
@@ -31,11 +33,13 @@ import '../../styles/itemList.css'
             <div className='itemListTitlesP'>
                 <p>Te recordamos que importamos los mejores productos de Apple. Todos en caja cerrada, con su film protector. Contamos con un año de garantía original. Somos resellers y nos interesa que vos tengas tu propio dispositivo Apple.</p>
             </div>
-        </div> 
+        </div>
         <p className ='titleHere'><span>Here.</span> All our {categoryId}</p>
-        {productos.length ? productos.map ((productoMapeado) => (
-            <Item products = {productoMapeado} key = {productoMapeado.id}/>
-        )) : <Loader/>}
+        <div className = 'itemsContainer'>
+            {productos.length ? productos.map ((productoMapeado) => (
+                <Item products = {productoMapeado} key = {productoMapeado.id}/>
+            )) : <Loader/>}
+        </div> 
         </div>
     );
 };

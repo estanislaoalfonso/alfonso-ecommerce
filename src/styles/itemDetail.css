@@ -1,5 +1,5 @@
 .containerVh {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
 
 .itemDetailContainer {
   display: flex;
-  width: 70%;
+  width: 60%;
   align-items: center;
   justify-content: center;
   margin: 20px;
@@ -46,4 +46,5 @@
 h4 {
   font-weight: 300;
   font-size: 1em;
+  line-height: 1.4;
 }

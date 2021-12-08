@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 
 const Item = ({products}) => {
+
+
     return (
     <div className = 'itemContainer'>
         <img src={products.photo} alt = "Dispositivo Apple" className="imageItem"/>

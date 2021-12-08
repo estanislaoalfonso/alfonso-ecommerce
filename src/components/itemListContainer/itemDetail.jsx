@@ -2,7 +2,7 @@ import '../../styles/itemDetail.css';
 import {ItemCount} from '../counter/itemCount.jsx';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useCartContext } from '../../context/CartContext';
+import { useCartContext } from '../../context/cartContext';
 
 
 

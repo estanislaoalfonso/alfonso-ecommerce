@@ -3,11 +3,11 @@ import { useState } from "react";
 import { useContext } from "react";
 
 //Creo un contexto que se llama CartContext. Como luego lo 'wrapeo' dentro de una función (usarCartContext), este no lo exporto, ya que lo que exportaré será la función anteriormente mencionada.
-const CartContext = createContext ();
+const cartContext = createContext ();
 
 //Genero esta funcion para no tener que llamar al useContext e importarlo siempre en todos los componentes que lo necesite, si no que solo me alcanza con tenerlo aqui. En los componentes, solo importaré el 'useCartContext ()' como función.
 export const useCartContext = () => {
-    return useContext (CartContext)
+    return useContext (cartContext)
 }
 //Va el children porque es todo lo que wrapea el CartProvider, entonces se lo tengo que pasar como prop.
 export const CartProvider = ({children}) => {
@@ -100,8 +100,8 @@ export const CartProvider = ({children}) => {
     }
 
 
-    return (<CartContext.Provider value = {{cart, handleIsInCart, inCart, addItem, removeItem, addMoreItems, clear, totalFinal, sumarTotales}}> {children}
-    </CartContext.Provider>
+    return (<cartContext.Provider value = {{cart, handleIsInCart, inCart, addItem, removeItem, addMoreItems, clear, totalFinal, sumarTotales}}> {children}
+    </cartContext.Provider>
     );
 }
 

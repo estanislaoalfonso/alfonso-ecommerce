@@ -7,7 +7,7 @@ import { Cart } from './components/cart/cart';
 import { Home } from './components/home/home';
 import { Error404 } from './components/error404/error404'
 import { Footer } from './components/footer/footer';
-import {CartProvider} from './context/CartContext';
+import {CartProvider} from './context/cartContext';
 import ItemList from './components/itemListContainer/itemList';
 import { Form } from './components/form/form';
 

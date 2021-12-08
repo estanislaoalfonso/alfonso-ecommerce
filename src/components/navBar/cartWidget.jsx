@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Dropdown, DropdownItem, DropdownMenu, DropdownToggle} from 'reactstrap'
 import { useState } from "react";
-import { useCartContext } from '../../context/CartContext';
+import { useCartContext } from '../../context/cartContext';
 
 
 

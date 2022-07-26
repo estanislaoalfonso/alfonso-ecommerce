@@ -16,7 +16,7 @@
 .itemListContainerTitle {
   background-color: rgb(245, 245, 247);
   color: #6e6e73;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.08349;
   padding-left: 30px;
@@ -69,7 +69,7 @@
 }
 
 .itemListTitle {
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 600;
   /* padding: 30px 20% 0 20%; */
   margin: 0;

@@ -10,7 +10,7 @@
 }
 
 .titleForm p {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.1;
   font-weight: 600;
   letter-spacing: 0;
@@ -24,7 +24,7 @@
 
 .formContainer p {
   color: #494949;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.16667;
   font-weight: 600;
   letter-spacing: 0.009em;
@@ -44,7 +44,7 @@
   padding: 18px 31px;
   border: none;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 15px;
   margin: 50px 30%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .orderContainer h3 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.05;
   font-weight: 500;
   letter-spacing: 0.008em;
@@ -76,12 +76,12 @@
 }
 
 .orderContainer h5 {
-  font-size: 25px;
+  font-size: 22px;
   color: #b6b6b6;
 }
 
 .orderContainer h6 {
-  font-size: 20px;
+  font-size: 18px;
   color: #b6b6b6;
 }
 

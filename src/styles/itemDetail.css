@@ -39,12 +39,12 @@
 }
 
 .itemDetailDetail h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .itemDetailDetail h3,
 h4 {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 14px;
   line-height: 1.4;
 }

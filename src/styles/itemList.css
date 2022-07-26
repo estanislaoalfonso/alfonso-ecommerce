@@ -27,7 +27,7 @@
 }
 
 .itemContainer h2 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   margin-top: 14px;
   margin-bottom: 27px;
@@ -61,12 +61,12 @@
 
 .itemListTitles h1,
 h2 {
-  font-size: 84px;
+  font-size: 60px;
 }
 
 .itemListTitlesP p {
   color: #86868b;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1.1666666667;
   font-weight: 600;
   letter-spacing: 0.009em;
@@ -77,7 +77,7 @@ h2 {
 
 .titleHere {
   padding: 0 20%;
-  font-size: 50px;
+  font-size: 40px;
   color: #86868b;
 }
 
